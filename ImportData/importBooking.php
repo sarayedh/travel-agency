@@ -1,10 +1,10 @@
 <?php
 
 //my database 
-$host = "localhost";
-$dbusername = "root";
-$dbpassword = "password";
-$dbname = "html-app-test";
+$host = "us-cdbr-east-05.cleardb.net";
+$dbusername = "bff42cf036cabb";
+$dbpassword = "0d9bb62b";
+$dbname = "heroku_36128ee037e6d57";
 
 //Creating a database connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
