@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+  <head>
+    <link rel="icon" href="icons/airplane.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type = "text/javascript" src="main.js"></script>
+ </head>
+
+<body>
+    <header class="main-head">
+        <nav>
+          <h1 id="logo"><strong> Arayedh's TravelLand</strong> </h1>
+          <ul>
+            <li><a href="main.html">Main Page</a></li>
+            <li><a href="offers.html">Offers and Stays</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <section id="contact">
+    <div class="form-wrapper">
+        <header class="form-head">
+          <h2>Book Now</h2>
+        </header>
+        <Form name="formulaire" action="booking.php"  method="post">
+                <div class="form"  >
+                  <label for="name">Name :</label>
+                  <input id="name" type="text" name="name" required />
+                </div>
+                <div class="form">
+                  <label for="name">Email :</label>
+                  <input id="email" type="text" name="email" required />
+                </div>
+                <div class="form">
+                  <label for="name">Location :</label>
+                  <input id="location" type="text" name="location" required />
+                </div>
+                <div class="form">
+                  <label for="name">Where do you wanna travel : </label>
+                    <select name="place" id="to" value="Where to travel" required>
+                        <option> Where to travel ? </option>
+                        <option value="America">America</option>
+                        <option value="London">London</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Maldive">Maldive</option>
+                     </select>
+                </div>
+                <div class="form">
+                  <label for="name">Phone :</label>
+                  <input id="Phone" type="text" name="Phone" required />
+                </div>
+                
+              <button type="submit" onclick="validerBooking()">Submit</button>
+        </Form>
+        </div>
+    </section>
+</body>
+</html>
